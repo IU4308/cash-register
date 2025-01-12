@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg1: #0a1930;
+    --bg2: #152f57;
+    --bg3: #193763;
+    --green: #6fb5b3;
+    --white: #cdd8f8;
+    --red: rgb(160, 5, 5);
+}
+
+
+html {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--bg1);
+    color: var(--white);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.title {
+    color: var(--green);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.monitor-container {
+    display: flex;
+    /* align-items: center; */
+    border: 5px solid var(--white);
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.29);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--white);
+
+    width: 50%;
+    /* height: 100%; */
+
+    /* padding: 1rem; */
+}
+
+
+
+label p {
+    padding-left: 0.2rem;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+input,
+button {
+    padding: 0.25rem;
+    width: 100%;
+    background-color: var(--bg2);
+    color: var(--white);
+    border: none
+}
+
+input {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.9
+}
+
+button:active {
+    opacity: 0.6
+}
+
+#change-due {
+    /* visibility: hidden; */
+    height: 100%;
+    background-color: rgb(2, 2, 46);
+    padding-bottom: 1rem;
+}
+
+.inner {
+    padding-bottom: 1rem;
+}
+
+#change-due p {
+    padding-top: 0.7rem;
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.open {
+    color: var(--green)
+}
+
+.closed {
+    color: var(--red)
+}
+
+.drawer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    width: 100%;
+    background: black;
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.price p {
+    font-size: 1.55rem;
+}
+
+.first {
+    color: var(--green);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.second {
+    color: var(--red);
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+#total-cid {
+    font-size: 1.3rem;
+}
+
+.change {
+    padding-bottom: 1rem;
+}
+
+.change p {
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    padding-top: 0.75rem;
+    padding-left: 1rem;
+}
+
+
+@media screen and (max-width: 450px) {
+    .monitor-container {
+        flex-direction: column;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .drawer {
+        width: 100%;
+    }
+
+}
